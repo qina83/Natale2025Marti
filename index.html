@@ -21,8 +21,8 @@
         }
         main {
             padding: 30px;
-            height: 300px;
-            overflow: hidden; /* Nasconde il testo che esce dalla finestra */
+            height: auto;
+            overflow: auto; /* Permette lo scorrimento del testo */
         }
         footer {
             background-color: #b71c1c; /* Colore scuro per il footer */
@@ -37,19 +37,7 @@
             font-weight: bold;
             margin-top: 20px;
             line-height: 1.6;
-            animation: scrollUp 15s linear infinite; /* Animazione che scorre verso l'alto */
         }
-        
-        /* Definizione dell'animazione */
-        @keyframes scrollUp {
-            0% {
-                transform: translateY(100%); /* Inizia fuori dallo schermo in basso */
-            }
-            100% {
-                transform: translateY(-100%); /* Si sposta completamente verso l'alto */
-            }
-        }
-
     </style>
 </head>
 <body>
